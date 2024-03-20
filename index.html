@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Personal Portfolio</title>
+
+</head>
+<body>
+   <div class="header">
+      <nav>
+         <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+           
+         </ul>
+      </nav>
+      <div class="profile" id="home">
+         <a href="#"><img src="41110736_MADHAVAN G.jpg" alt="logo" class="logo" height="150px" width="150px"></a>
+      </div>
+      <nav>
+         <ul>
+            <li><button type="button" class="button-cv">Projects</button></li>
+            <li><button type="button" class="button-cv">DOWNLOAD CV</button></li>
+         </ul>
+      </nav>
+   </div>
+
+   <div class="body">
+      <p class="demo1">.</p>
+      <h1>Hello <br> I'm Madhavan<span> G</span></h1>
+      <p class="demo2">I'm a full-stack developer. I bring ideas to life as a versatile full-stack developer...</p>
+
+      <button type="button" class="button-lrn">LEARN MORE</button>
+      <button type="button" class="button-hire">HIRE ME</button>
+
+      <div class="about" id="about">
+         <h1><u>About Me</u></h1>
+         <p>Hello! I'm Madhavan, a passionate full-stack developer with expertise in HTML, CSS, JavaScript, C, and C++. I've delved into various projects utilizing these technologies, honing my skills in web development and programming along the way. From crafting responsive layouts to implementing complex functionalities, I enjoy the creative and problem-solving aspects of building digital solutions.</p>
+
+         <p>Beyond coding, I have a deep-seated love for gaming. Exploring virtual worlds, solving puzzles, and engaging in immersive experiences have always captivated me. It's this passion for gaming that fuels my ambition to transition into the world of game development.</p>
+
+         <p>My goal is to combine my programming skills with my love for gaming to become a proficient game developer. I envision creating captivating and innovative games that resonate with players worldwide. To achieve this, I'm continuously learning, experimenting with new technologies, and immersing myself in the vibrant game development community.</p>
+
+         <p>In my journey towards becoming a game developer, I'm eager to embrace challenges, learn from experiences, and push the boundaries of what's possible. I believe that with dedication, perseverance, and a sprinkle of creativity, I'll turn my dream of becoming a game developer into reality.</p>
+
+         <p>Let's connect and embark on this exciting journey together!</p>
+      </div>
+   </div>
+   <div id="skills">
+      <h3>Skills</h3>
+      <div class="skill">
+          <div class="techskill">
+              <h4 id="abc">Tech</h4>
+              <ul>
+                  <li>C</li>
+                  <li><progress value="90" max="100"></progress></li>
+                  <li>C++</li>
+                  <li><progress value="90" max="100"></progress></li>
+                  <li>Java</li>
+                  <li><progress value="90" max="100"></progress></li>
+                  <li>Python</li>
+                  <li><progress value="90" max="100"></progress></li>
+                  <li>HTML/CSS/JS/Bootstrap</li>
+                  <li><progress value="80" max="100"></progress></li>
+              </ul>
+          </div>
+   </div>
+      <div class="languageskill">
+               <h4>Languages</h4>
+         <ul>
+            <li>English</li>
+            <li><progress value="95" max="100"></progress></li>
+            <li>Tamil</li>
+            <li><progress value="100" max="100"></progress></li>
+            <li>Telugu</li>
+            <li><progress value="80" max="100"></progress></li>
+         </ul>
+         
+   </div>
+   <div id="contact">
+      <h1><u>Contact Me</u></h1>
+      <p>Feel free to contact me for any queries or collaborations. I'd love to hear from you!</p>
+      <button type="button" class="button-cv">CONTACT ME</button>
+   </div>
+
+   
+
+   <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+         anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+               behavior: 'smooth'
+            });
+         });
+      });
+   </script>
+</body>
+</html>
